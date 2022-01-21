@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head id="head">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Neo</title>
+    <style>
+    /*id's are used for one specific element; when one element on the page should have a 
+    particular style
+    
+    Classes are used for more than one element*/
+
+    /* Colors
+        --Greens--
+            Light - #D4E6CA
+            Middle - #60928F
+            Dark - #335864
+        --Gold--
+            Light - #F8ECB9
+            Middle - #CBBD8F
+            Dark - #9B835B
+        --Blues--
+            Light - #F0FEFF
+            Middle - #B3CCD8
+            Dark - #3E4976
+        --Cyans--
+            Light - #ABECEF
+            Middle - #649692
+            Dark - #48706A
+        --Blacks--
+            Light - #585458
+            Middle - #25262C
+            Dark - #080A15
+        --Whites--
+            #F9F8F6
+    */
+    #head {
+        background-color: blueviolet;
+    }
+    #title {
+        /*background-color: aquamarine;*/
+        background-image: linear-gradient(black,white);
+        margin: 0;
+        padding: 0.5em;
+        text-align: center;
+        font-size: 3em;
+        font-family: Arial, Helvetica, monospace;
+        
+
+    }
+    .content {
+        height: 50em;
+        background-color: rgba(151, 151, 151, 0.479);
+    }
+    .body {
+        /*margin: 1em;*/
+        background-color:  #F9F8F6;
+        font-family: 'Courier New', Courier, monospace;
+        margin: 1em;
+
+    }
+    #content {
+        background-color: beige;
+        position: relative;
+        height: 200em;
+        margin: 0;
+    }
+
+    /* Shall be used as stats, time, and the such */
+    #footer {
+        position: fixed;
+        bottom: 0;
+        height: 1em;
+        background-color: grey;
+    }
+    .header {
+    background-color: #F1F1F1;
+    text-align: center;
+    /*padding: 20px;*/
+    margin-bottom: 1em;
+    border-style: double;
+    background-color: rgba(167, 167, 167, 0.637);
+    }
+    #header-part {
+        width: 33%;
+    }
+    .mainstuff{
+        margin-left: 10em;
+        border: double;
+        overflow: hidden;
+        padding: 0em .5em;
+        background-color: #649692;
+        margin-bottom: 1.5em;
+    }
+    .profile {
+        float: left;
+        padding: 0em .5em;
+        /* position: absolute; */
+        background-color: rgba(168, 168, 168, 0.479);
+        /* margin-top: 1em;
+        margin-bottom: 1em; */
+        width: 8em;
+        height: 25em;
+        border-style: double;
+    }
+    /* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  margin-bottom: 1em;
+  border-style: double;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  text-decoration: none;
+  width: 33.33%;
+  font-size: 2em;
+  
+}
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.center-fit {
+            max-width: 100%;
+            max-height: 100vh;
+            margin: auto;
+        }
+/* Thinking to change to grid / flexbox 
+format */
+.grid-containter {
+    display: grid;
+    grid-template-columns: 200px 100px 300px;
+    grid-template-rows: 100px 100px;
+    gap: 20px;
+}
+.grid-item {
+
+
+}
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+}
+</style>
+
+</head>
+<!-- Pages: animation, photography, music, home projects, coding project, games, art-->
+
+<!-- ------------------------------------------------------------------------------------------ -->
+<body class="body">
+    <div class="grid-container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>
+    </div>
+    <p>-------------------------------</p>
+    <div class="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <div class="header">
+        <h1>Neo's Crossing</h1>
+    </div>
+    <div class="topnav">
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+    </div>
+    <!-- <div id="title">
+        neo_x
+    </div> -->
+    <div id="menu-bar"> <!-- not being used lol -->
+    </div>
+    
+    <div class="content"> <!-- I want to split this into 2 -->
+        <!-- The dubz below is indented due to the profile class -->
+        <!-- dubz -->
+        <div class="profile">
+            <!-- add a profile picture -->
+            <p>Beuh this is the profile thing</p>
+            <p></p>
+            <p>is the spacing correcr?</p>
+        </div>
+        <div class="mainstuff">
+            <h2><u>My First Post</u></h2>
+            
+            <p>This is the mainstuff div.</p>
+            <p></p>
+            <p> This is where the people need to put the stuff in. 
+                Hopefully, this is going to be on the right.</p>
+            <p></p>
+            <p>I will update this website with posts on upgrading the website.</p>
+            <p>--December 13, 2021<p>
+        </div>
+        <div class="mainstuff">
+            <img class="center-fit" src="https://uploadstatic-sea.mihoyo.com/contentweb/20200723/2020072319115159476.png">
+        </div>
+    </div>
+    <div>
+        <!-- this is where the legal information goes + contact-->
+        <p>Random information</p>
+        <p>Why u looking here lol</p>
+    </div>
+    <div id="footer">
+        [TODO weather + time]
+    </div>
+    
+</body>
+</html>
